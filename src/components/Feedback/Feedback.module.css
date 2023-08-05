@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Libre+Baskerville&display=swap');
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+}
+.section_title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Gloock', serif;
+}
+.options_list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.options {
+  display: flex;
+  padding: 16px;
+  letter-spacing: 0.04em;
+  border-color: transparent;
+  border-radius: 6px;
+  color: white;
+  background-color: #048891;
+  transition: background-color 250ms cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+.options:hover {
+  border: 1px solid #048891;
+  background-color: white;
+  color: #048891;
+}
+.text_options {
+  text-transform: capitalize;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+}
+.message {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+}
+.stats {
+  composes: message;
+}
+.stats:not(:last-child) {
+  margin-bottom: 10px;
+}
+.stats_amount {
+  margin-left: 10px;
+  font-family: 'Gloock', serif;
+  font-size: 22px;
+  color: #048891;
+}
